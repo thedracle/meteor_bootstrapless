@@ -1,3 +1,7 @@
+Npm.depends({"less": ""});
+Npm.depends({"fs": ""});
+Npm.depends({"path": ""});
+
 Package.describe({
   summary: "UX/UI framework from Twitter with less " + '\n add @import "bootstrap.less"; to your less file'
 });
