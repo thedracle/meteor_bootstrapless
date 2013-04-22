@@ -13,7 +13,6 @@ Package.on_use(function (api) {
 
 });
 
-var less = Npm.require('less');
 var fs = Npm.require('fs');
 var path = Npm.require('path');
 var bootstrap = ""; 
@@ -40,6 +39,8 @@ Package.register_extension(
             //temp.push(pat);
         }
         contents = contents.replace(/@amport/g,'@import');
+      var less = Npm.require('less');
+
       less.render(contents.toString('utf8'), function (err, css) {
  
         // XXX why is this a callback? it's not async.
