@@ -11,9 +11,9 @@ Package.on_use(function (api) {
 
 });
 
-var less = require('less');
-var fs = require('fs');
-var path = require('path');
+var less = Npm.require('less');
+var fs = Npm.require('fs');
+var path = Npm.require('path');
 var bootstrap = ""; 
 Package.register_extension(
   "less", function (bundle, source_path, serve_path, where) {
